@@ -4,9 +4,19 @@ export const GlobalStyle = createGlobalStyle`
 
 :root{
     --font-default: 'Inter', sans-serif;
-
     --font-normal: 400;
     --font-bold:700;
+}
+
+#light,
+:root{
+    --bg-color: #f1f1f1;
+    --text-color: #121214;
+}
+#dark,
+:root:has(#dark:checked){
+    --bg-color: #121214;
+    --text-color: #f1f1f1;
 }
 
 *{
@@ -26,7 +36,9 @@ html{
 
 body{
     font-family: var(--font-default);
-    -webkit-font-smoothing: antialiased; 
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 body, input, textarea{
