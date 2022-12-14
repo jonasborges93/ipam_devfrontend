@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {device} from '../../styles/devices';
 
 export const ThemeItem = styled.div`
     display: flex;
@@ -16,6 +17,10 @@ export const ThemeItem = styled.div`
 
         &:not(:last-child){
         margin-right: 1rem;
+
+        @media ${device.mobile}{
+            margin-right: .5rem;
+        }
         }
     }
 

@@ -12,11 +12,15 @@ export const GlobalStyle = createGlobalStyle`
 :root{
     --bg-color: #f1f1f1;
     --text-color: #121214;
+    --header-color: #f9f9f9;
+    --border-select: rgba(0,0,0,.15);
 }
 #dark,
 :root:has(#dark:checked){
     --bg-color: #121214;
     --text-color: #f1f1f1;
+    --header-color: #161616;
+    --border-select: rgba(255,255,255,.15);
 }
 
 *{
