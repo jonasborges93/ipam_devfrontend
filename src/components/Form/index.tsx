@@ -20,6 +20,8 @@ export function Form() {
         setFormCityValue(e.target.value)  
     }
 
+    console.log(formCityValue)
+
     return (
         <FormContent>
             <FormContainer>
@@ -27,7 +29,6 @@ export function Form() {
                     <SelectBrazilianStates onChange={handleInputStatesChange}/>
                     <SelectBrazilianCities state={formValues} onChange={handleInputCityChange}/>
                 </FormGrid>
-                {/* <InfoDestric idCityForDistric={formCityValue}/> */}
             </FormContainer>
         </FormContent>
     )
