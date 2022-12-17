@@ -7,9 +7,9 @@ export const InfoDistricContetn = styled.div`
 `;
 
 export const InfoDistrictBox = styled.div`
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
-    text-align: center;
+    text-align: center; */
 `; 
