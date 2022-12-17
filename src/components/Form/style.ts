@@ -49,5 +49,17 @@ export const FormBox = styled.div`
         @media ${device.tablet}{
             padding: 1rem 1.5rem;
         }
+
+        option{
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
     }
+`;
+
+export const DistrictContent = styled.div`
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--border-select);
+    color: var(--text-color);
 `;

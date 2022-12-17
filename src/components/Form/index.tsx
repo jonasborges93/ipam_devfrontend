@@ -1,8 +1,8 @@
 import { ChangeEvent, useState } from 'react';
-// import { InfoDestric } from './InfoDestrict';
+import { InfoDestric } from './InfoDestrict';
 import { SelectBrazilianCities } from './SelectBrazilianCities';
 import { SelectBrazilianStates } from './SelectBrazilianStates';
-import { FormContent, FormContainer, FormGrid } from './style';
+import { FormContent, FormContainer, FormGrid, DistrictContent } from './style';
 
 export function Form() {
 
@@ -19,9 +19,6 @@ export function Form() {
         e.preventDefault()
         setFormCityValue(e.target.value)  
     }
-
-    console.log(formCityValue)
-
     return (
         <FormContent>
             <FormContainer>
@@ -29,6 +26,7 @@ export function Form() {
                     <SelectBrazilianStates onChange={handleInputStatesChange}/>
                     <SelectBrazilianCities state={formValues} onChange={handleInputCityChange}/>
                 </FormGrid>
+                <InfoDestric idCityForDistric={formCityValue}/> 
             </FormContainer>
         </FormContent>
     )

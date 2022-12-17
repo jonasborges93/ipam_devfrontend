@@ -10,7 +10,7 @@ export const fetchCitiesForStates = (state:string) => {
     return fetch(url).then(response => response.json());
 }
 
-// export const fetchCitiesForDistrict = (idCity:string) => {
-//     const url = `${BASE_URL}/localidades/municipios/${idCity}/distritos`;
-//     return fetch(url).then(response => response.json());
-// }
+export const fetchCitiesForDistrict = (idCity:string) => {
+    const url = `${BASE_URL}/localidades/municipios/${idCity}/distritos`;
+    return fetch(url).then(response => response.json());
+}
