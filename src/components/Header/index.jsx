@@ -6,7 +6,7 @@ export function Header() {
         <HeaderComponent>
             <HeaderContainer>
                 <HeaderFlex>
-                    <h1>Desafio Front End</h1>
+                    <h1>Dev Front End</h1>
                     <ThemeColor />
                 </HeaderFlex>
             </HeaderContainer>

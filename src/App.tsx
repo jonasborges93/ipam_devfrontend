@@ -1,5 +1,4 @@
-import React from 'react';
-import { Form } from './components/Form';
+import { Ipam } from './components/Ipam';
 import { Header } from './components/Header';
 import { GlobalStyle } from './styles/global';
 
@@ -7,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <Form />
+      <Ipam />
       <GlobalStyle />
     </>
   );

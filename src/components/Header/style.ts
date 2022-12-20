@@ -17,7 +17,7 @@ export const HeaderFlex = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
     h1{
         font-size: 2rem;
 
