@@ -6,17 +6,15 @@ export const GlobalStyle = createGlobalStyle`
     --font-default: 'Inter', sans-serif;
     --font-normal: 400;
     --font-bold:700;
-}
 
-#light,
-:root{
     --bg-color: #f1f1f1;
     --text-color: #121214;
     --header-color: #f9f9f9;
     --border-select: rgba(0,0,0,.15);
 }
-#dark,
-:root:has(#dark:checked){
+
+#darkmode-toggle,
+:root:has(#darkmode-toggle:checked){
     --bg-color: #121214;
     --text-color: #f1f1f1;
     --header-color: #161616;

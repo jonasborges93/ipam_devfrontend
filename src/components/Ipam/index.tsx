@@ -11,6 +11,7 @@ export function Ipam() {
 
     const handleInputStatesChange = (e:ChangeEvent<HTMLSelectElement>) => {
          e.preventDefault()
+
          const {value, name} = e.target
          setFormValues({...formValues, [name]:value});
     }

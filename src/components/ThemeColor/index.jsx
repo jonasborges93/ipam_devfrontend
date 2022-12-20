@@ -1,32 +1,16 @@
-import { useState } from 'react'
-import { ThemeItem } from './style'
-export function ThemeColor() {
-    const [isChecked, setIsChecked] = useState(true)
+import { ThemeItem } from './style';
 
-    const handleChange = () => {
-        setIsChecked(!isChecked)
-    }
+export function ThemeColor() {
 
     return (
         <ThemeItem>
-            <label htmlFor="light">
-                <input 
-                    type="radio" 
-                    name="themecolor" 
-                    id="light" 
-                    checked={isChecked} 
-                    onChange={handleChange} 
-                />
+            <input 
+                type="checkbox" 
+                name="darkmode-toggle" 
+                id="darkmode-toggle" 
+            />
+            <label htmlFor="darkmode-toggle">
                 <i className="uil uil-sun"></i>
-            </label>
-            <label htmlFor="dark">
-                <input 
-                    type="radio" 
-                    name="themecolor" 
-                    id="dark" 
-                    checked={!isChecked} 
-                    onChange={handleChange} 
-                />
                 <i className="uil uil-moon"></i>
             </label>
         </ThemeItem>
